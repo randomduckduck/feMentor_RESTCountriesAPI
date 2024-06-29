@@ -8,6 +8,21 @@
     <script src="./scripts/react-dom.development.js"></script>
     <script src="./scripts/react-router.development.js"></script>
     <script src="./scripts/react-router-dom.development.js"></script> -->
+    <!-- <script
+      crossorigin
+      type="module"
+      src="./scripts/esmScripts/reactdev_18.3.mjs"
+    ></script>
+    <script
+      crossorigin
+      type="module"
+      src="./scripts/esmScripts/scheduler.mjs"
+    ></script>
+    <script
+      crossorigin
+      type="module"
+      src="./scripts/esmScripts/reactdom.mjs"
+    ></script> -->
     <!-- <script src="https://unpkg.com/react@16.3.1/umd/react.production.min.js"></script> -->
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.min.js"
@@ -21,10 +36,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@17.0.2/umd/react.development.js"
-    ></script>
+    ></script> -->
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.min.js"
       integrity="sha512-aNBFq6ue8EmNDwVD/l0mWFy3iVZLIxtQaD7fEYBn3HluJer36T1AhJK0THj6MKKfhZrexxWsKX1T16TxLZo6uQ=="
@@ -37,12 +52,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
     <!-- <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js"></script> -->
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react-router/5.3.3/react-router.js"
       integrity="sha512-+HInkMISOgG7J36Un1Wkwql7BL3fHFW71pi/gY2G8t0CTIl7f7uWdkwUo9VO6ELfEQaONFQTNKWUxLCDQN3UBg=="
       crossorigin="anonymous"
@@ -53,7 +68,7 @@
       integrity="sha512-Cj1n3idUeZv/HZvK5MpVkrwuydaf/I0FQ40zGmCTt6ZnoP2cQsgqAvRSZoI4b9fdOQwmIPAGmWssW3+H22D1lQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
 
     <!-- <script src="https://unpkg.com/react-router/umd/react-router.min.js"></script> -->
     <!-- <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script> -->
@@ -74,7 +89,15 @@
   </head>
   <body>
     <div id="root"></div>
-    <script crossorigin type="text/babel" src="./scripts/index.js"></script>
+    <script
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      type="text/babel"
+      data-type="module"
+      data-presets="react"
+      src="./scripts/index.js"
+    ></script>
+    <!-- <script type="module"  src="./scripts/index.js"></script> -->
     data-type="module" data-presets="env,react"
   </body>
 </html>
