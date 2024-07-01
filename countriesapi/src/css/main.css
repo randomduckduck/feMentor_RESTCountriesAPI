@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.plpContentHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* pdp */
+.pdpContentHolder {
+  display: flex;
+}
+.subDetailsSection {
+  display: flex;
+  flex-wrap: wrap;
+}
