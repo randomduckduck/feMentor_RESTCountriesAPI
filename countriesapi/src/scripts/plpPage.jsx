@@ -7,7 +7,7 @@ function Search(props) {
     props.setInputTerm(e.target.value);
   }
   return (
-    <div>
+    <div className="searchHolder">
       <input
         type="text"
         className="plpSearch"
@@ -27,7 +27,7 @@ function Filter(props) {
     }
   }
   return (
-    <div>
+    <div className="filterHolder">
       <select name="regionselect" id="regionselect" onInput={handleSelect}>
         <option value="SelectRegion">Select Region</option>
         <option value="Africa">Africa</option>
@@ -69,7 +69,7 @@ export default function PlpPage({ countriesData }) {
     filterList();
   }, [inputTerm, filterTerm]);
   return (
-    <>
+    <div className="plpMain">
       <div className="searchAndFilterSection">
         <Search inputTerm={inputTerm} setInputTerm={setInputTerm}></Search>
         <Filter filterTerm={filterTerm} setFilterTerm={setFilterTerm}></Filter>
@@ -79,6 +79,6 @@ export default function PlpPage({ countriesData }) {
           return <PlpCard country={countryData}></PlpCard>;
         })}
       </div>
-    </>
+    </div>
   );
 }

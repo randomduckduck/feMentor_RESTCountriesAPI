@@ -44,7 +44,7 @@ export default function Pdp(props) {
   let borderCountryCodes = country.borders;
   //   let borderCountryNames = borderCountryCodes?.map(convertCodeToName);
   return (
-    <div>
+    <div className="pdpHolder">
       <div className="backSection">
         {/* <button className="backButton"> */}{" "}
         <Link to="/" className="backBtn">
@@ -54,26 +54,50 @@ export default function Pdp(props) {
       </div>
       <div className="pdpContentHolder">
         <div className="pdpImageSection">
-          <img src="" alt="countrypdpImage" className="pdpCountryImage" />
+          <img
+            src={country.flag}
+            alt="countrypdpImage"
+            className="pdpCountryImage"
+          />
         </div>
         <div className="pdpDetailsSection">
           <div className="pdpCountryName">{country.name}</div>
           <div className="subDetailsSection">
             <div className="subDetails1">
-              <p>Native Name : {country.nativeName}</p>
-              <p>Population: {country.population}</p>
-              <p>Region : {country.region}</p>
-              <p>sub region : {country.subregion}</p>
-              <p>Capital : {country.capital}</p>
+              <p>
+                <span className="subTitle">Native Name</span>:{" "}
+                {country.nativeName}
+              </p>
+              <p>
+                <span className="subTitle">Population</span>:{" "}
+                {country.population}
+              </p>
+              <p>
+                <span className="subTitle">Region</span>: {country.region}
+              </p>
+              <p>
+                <span className="subTitle">sub</span>region :{" "}
+                {country.subregion}
+              </p>
+              <p>
+                <span className="subTitle">Capital</span>: {country.capital}
+              </p>
             </div>
             <div className="subDetails2">
-              <p>Top Level Domain : {topLeveDomainString} </p>
-              <p>Currencies :{currencyString}</p>
-              <p>Languages : {languageString}</p>
+              <p>
+                <span className="subTitle">Top</span>Level Domain :{" "}
+                {topLeveDomainString}{" "}
+              </p>
+              <p>
+                <span className="subTitle">Currencies</span>:{currencyString}
+              </p>
+              <p>
+                <span className="subTitle">Languages</span>: {languageString}
+              </p>
             </div>
           </div>
           <div className="borderCountriesSection">
-            Border Countries :
+            <span className="borderTitle">Border Countries :</span>
             {borderCountryCodes?.map((countryCode) => (
               //   <button className="borderButton">{countryName}</button>
               <Link to={"/country/" + countryCode} className="borderBtn">
