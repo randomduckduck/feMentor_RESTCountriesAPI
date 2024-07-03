@@ -1,11 +1,50 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Nunita Sans Black";
+  src: url("./nunito-sans/NunitoSans-Regular.ttf");
+}
+body {
+  font-family: "Nunita Sans Black";
+}
 .plpContentHolder {
   display: flex;
   flex-wrap: wrap;
+  margin: 5%;
+  gap: 7%;
+  align-items: baseline;
 }
+.plpContentHolder > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  margin-top: 50px;
+}
+/* .imgSection {
+  img {
 
+  }
+} */
+.imgSection {
+  max-width: 100%;
+  max-height: calc(230 / 320 * 213px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+}
+.cardContentSection {
+  padding: 10px;
+}
+.countryName {
+  font-size: larger;
+  font-weight: 800;
+}
+.countryDetails .subTitle {
+  font-weight: 600;
+}
 /* pdp */
 .pdpContentHolder {
   display: flex;

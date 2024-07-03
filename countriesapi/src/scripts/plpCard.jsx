@@ -13,17 +13,23 @@ export default function PlpCard({ country }) {
     <div onClick={handleClick}>
       <div className="imgSection">
         <img
-          // src={country.flag}
-          src=""
+          src={country.flags.png}
+          // src=""
           alt="countryFlagImage"
         />
       </div>
       <div className="cardContentSection">
         <div className="countryName">{country.name}</div>
         <div className="countryDetails">
-          <p className="cardPop">Population : {country.population}</p>
-          <p className="cardRegion">Region: {country.region} </p>
-          <p className="cardCapital">Capital : {country.capital} </p>
+          <p className="cardPop">
+            <span className="subTitle">Population</span>: {country.population}
+          </p>
+          <p className="cardRegion">
+            <span className="subTitle">Region</span>: {country.region}{" "}
+          </p>
+          <p className="cardCapital">
+            <span className="subTitle">Capital</span> : {country.capital}{" "}
+          </p>
         </div>
       </div>
     </div>
