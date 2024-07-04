@@ -7,7 +7,7 @@ function Search(props) {
     props.setInputTerm(e.target.value);
   }
   return (
-    <div className="searchHolder">
+    <div className="searchHolder boxShadowClass">
       <input
         type="text"
         className="plpSearch"
@@ -27,9 +27,9 @@ function Filter(props) {
     }
   }
   return (
-    <div className="filterHolder">
+    <div className="filterHolder boxShadowClass">
       <select name="regionselect" id="regionselect" onInput={handleSelect}>
-        <option value="SelectRegion">Select Region</option>
+        <option value="SelectRegion">Filter By Region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
         <option value="Asia">Asia</option>
@@ -56,18 +56,18 @@ export default function PlpPage({ countriesData }) {
       });
     }
     //apply input filter on filtered region list
-    if (searchValue.length > 0) {
-      let tempSearchValue = searchValue.toLowerCase();
-      finalList = finalList.filter((country) => {
-        return country.name.toLowerCase().includes(tempSearchValue);
-      });
-    }
+    // if (searchValue.length > 0) {
+    //   let tempSearchValue = searchValue.toLowerCase();
+    //   finalList = finalList.filter((country) => {
+    //     return country.name.toLowerCase().includes(tempSearchValue);
+    //   });
+    // }
     setInputTerm(searchValue);
     setPlpCountriesData(finalList);
   }
   useEffect(() => {
     filterList();
-  }, [inputTerm, filterTerm]);
+  }, [filterTerm]);
   return (
     <div className="plpMain">
       <div className="searchAndFilterSection">

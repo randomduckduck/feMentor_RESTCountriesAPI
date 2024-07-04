@@ -47,7 +47,7 @@ export default function Pdp(props) {
     <div className="pdpHolder">
       <div className="backSection">
         {/* <button className="backButton"> */}{" "}
-        <Link to="/" className="backBtn">
+        <Link to="/" className="backBtn boxShadowClass">
           {"<--"} Back
         </Link>
         {/* </button> */}
@@ -100,7 +100,10 @@ export default function Pdp(props) {
             <span className="borderTitle">Border Countries :</span>
             {borderCountryCodes?.map((countryCode) => (
               //   <button className="borderButton">{countryName}</button>
-              <Link to={"/country/" + countryCode} className="borderBtn">
+              <Link
+                to={"/country/" + countryCode}
+                className="borderBtn boxShadowClass"
+              >
                 {convertCodeToName(countryCode)}
               </Link>
             ))}

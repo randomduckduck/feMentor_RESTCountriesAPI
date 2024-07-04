@@ -10,7 +10,7 @@ export default function PlpCard({ country }) {
     });
   }
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="boxShadowClass">
       <div className="imgSection">
         <img
           src={country.flags.png}
