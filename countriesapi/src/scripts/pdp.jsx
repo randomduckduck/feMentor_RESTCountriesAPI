@@ -76,8 +76,7 @@ export default function Pdp(props) {
                 <span className="subTitle">Region</span>: {country.region}
               </p>
               <p>
-                <span className="subTitle">sub</span>region :{" "}
-                {country.subregion}
+                <span className="subTitle">Subregion</span>: {country.subregion}
               </p>
               <p>
                 <span className="subTitle">Capital</span>: {country.capital}
@@ -85,11 +84,11 @@ export default function Pdp(props) {
             </div>
             <div className="subDetails2">
               <p>
-                <span className="subTitle">Top</span>Level Domain :{" "}
-                {topLeveDomainString}{" "}
+                <span className="subTitle">Top Level Domain</span>:
+                {topLeveDomainString}
               </p>
               <p>
-                <span className="subTitle">Currencies</span>:{currencyString}
+                <span className="subTitle">Currencies</span>: {currencyString}
               </p>
               <p>
                 <span className="subTitle">Languages</span>: {languageString}

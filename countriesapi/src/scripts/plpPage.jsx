@@ -56,18 +56,18 @@ export default function PlpPage({ countriesData }) {
       });
     }
     //apply input filter on filtered region list
-    // if (searchValue.length > 0) {
-    //   let tempSearchValue = searchValue.toLowerCase();
-    //   finalList = finalList.filter((country) => {
-    //     return country.name.toLowerCase().includes(tempSearchValue);
-    //   });
-    // }
+    if (searchValue.length > 0) {
+      let tempSearchValue = searchValue.toLowerCase();
+      finalList = finalList.filter((country) => {
+        return country.name.toLowerCase().includes(tempSearchValue);
+      });
+    }
     setInputTerm(searchValue);
     setPlpCountriesData(finalList);
   }
   useEffect(() => {
     filterList();
-  }, [filterTerm]);
+  }, [inputTerm, filterTerm]);
   return (
     <div className="plpMain">
       <div className="searchAndFilterSection">
