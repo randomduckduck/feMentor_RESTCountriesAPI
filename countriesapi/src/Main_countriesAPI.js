@@ -17,11 +17,14 @@ export default function Main_countriesAPI() {
         <Topbar></Topbar>
         <Routes>
           <Route
-            path="/"
+            path="/feMentor_RESTCountriesAPI/"
             exact
             element={<PlpPage countriesData={datareceived}></PlpPage>}
           ></Route>
-          <Route path="/country/:countryCode" element={<Pdp></Pdp>}></Route>
+          <Route
+            path="/feMentor_RESTCountriesAPI/country/:countryCode"
+            element={<Pdp></Pdp>}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>
