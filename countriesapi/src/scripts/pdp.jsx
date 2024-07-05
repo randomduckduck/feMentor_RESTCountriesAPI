@@ -18,22 +18,24 @@ export default function Pdp(props) {
     country = location.state.country;
   }
   console.log("country obj is now:", country);
-  let languageString = country.languages.reduce((acc, language) => {
+  let languageString = country.languages?.reduce((acc, language) => {
     return acc + language.name + " , ";
   }, " ");
-  languageString = languageString.slice(0, -2);
+  languageString = languageString ? languageString.slice(0, -2) : " ";
 
-  let currencyString = country.currencies.reduce(
+  let currencyString = country.currencies?.reduce(
     (acc, currency) => acc + currency.name + " , ",
     " "
   );
 
-  let topLeveDomainString = country.topLevelDomain.reduce(
+  let topLeveDomainString = country.topLevelDomain?.reduce(
     (acc, entry) => acc + entry + " , ",
     " "
   );
-  topLeveDomainString = topLeveDomainString.slice(0, -2);
-  currencyString = currencyString.slice(0, -2);
+  topLeveDomainString = topLeveDomainString
+    ? topLeveDomainString.slice(0, -2)
+    : " ";
+  currencyString = currencyString ? currencyString.slice(0, -2) : " ";
   function convertCodeToName(countryCode) {
     let countriesData = window.countriesData;
     let reqCountryObj = countriesData.filter(
