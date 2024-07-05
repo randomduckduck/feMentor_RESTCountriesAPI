@@ -5,7 +5,7 @@ export default function PlpCard({ country }) {
   let navigateObj = useNavigate();
   //   console.log("navigateObj is:", navigateObj);
   function handleClick() {
-    navigateObj("/country/" + country.alpha3Code, {
+    navigateObj("/feMentor_RESTCountriesAPI/country/" + country.alpha3Code, {
       state: { country: country },
     });
   }

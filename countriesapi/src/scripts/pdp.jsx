@@ -47,7 +47,10 @@ export default function Pdp(props) {
     <div className="pdpHolder">
       <div className="backSection">
         {/* <button className="backButton"> */}{" "}
-        <Link to="/" className="backBtn boxShadowClass">
+        <Link
+          to="/feMentor_RESTCountriesAPI/"
+          className="backBtn boxShadowClass"
+        >
           {"<--"} Back
         </Link>
         {/* </button> */}
@@ -100,7 +103,7 @@ export default function Pdp(props) {
             {borderCountryCodes?.map((countryCode) => (
               //   <button className="borderButton">{countryName}</button>
               <Link
-                to={"/country/" + countryCode}
+                to={"/feMentor_RESTCountriesAPI/country/" + countryCode}
                 className="borderBtn boxShadowClass"
               >
                 {convertCodeToName(countryCode)}
