@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/feMentor_RESTCountriesAPI/static/css/main.469fd72e.css",
-    "main.js": "/feMentor_RESTCountriesAPI/static/js/main.028d0296.js",
+    "main.js": "/feMentor_RESTCountriesAPI/static/js/main.ad212702.js",
     "static/media/NunitoSans-Regular.ttf": "/feMentor_RESTCountriesAPI/static/media/NunitoSans-Regular.a427ddbe4dc20889d6e0.ttf",
     "static/media/logo.svg": "/feMentor_RESTCountriesAPI/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/feMentor_RESTCountriesAPI/index.html",
     "main.469fd72e.css.map": "/feMentor_RESTCountriesAPI/static/css/main.469fd72e.css.map",
-    "main.028d0296.js.map": "/feMentor_RESTCountriesAPI/static/js/main.028d0296.js.map"
+    "main.ad212702.js.map": "/feMentor_RESTCountriesAPI/static/js/main.ad212702.js.map"
   },
   "entrypoints": [
     "static/css/main.469fd72e.css",
-    "static/js/main.028d0296.js"
+    "static/js/main.ad212702.js"
   ]
 }
